@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS5-Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid p-3 bg-black text-white"><h1 class="display-2">Bootstrap5-Buttons</h1></div>
+    <div class="container my-5">
+        <h2>Button Styles</h2>
+        <p>Bootstrap 5 provides different styles of buttons</p>
+        <table class="table table-striped table-bordered">
+            <thead class="table-info">
+                <tr>
+                    <th>Button</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button type="button" class="btn">Basic</button></td>
+                    <td>Class: <b>.btn</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-primary">Primary</button></td>
+                    <td>Class: <b>.btn btn-primary</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-secondary">Secondary</button></td>
+                    <td>Class: <b>.btn btn-secondary</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-success">Success</button></td>
+                    <td>Class: <b>.btn btn-success</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-info">Info</button></td>
+                    <td>Class: <b>.btn btn-info</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-warning">Warning</button></td>
+                    <td>Class: <b>.btn btn-warning</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-danger">Danger</button></td>
+                    <td>Class: <b>.btn btn-danger</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-dark">Dark</button></td>
+                    <td>Class: <b>.btn btn-dark</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-light">Light</button></td>
+                    <td>Class: <b>.btn btn-light</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-link">Link</button></td>
+                    <td>Class: <b>.btn btn-link</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="container my-5">
+        <h2>Button Outline</h2>
+        <p>Bootstrap 5 also provides eight outline/bordered buttons.</p>
+        <p>Move the mouse over them to see an additional <b>"hover"</b> effect.</p>
+        <table class="table table-striped table-bordered">
+            <thead class="table-success">
+                <tr>
+                    <th>Button</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button type="button" class="btn btn-outline-primary">Primary</button></td>
+                    <td>Class: <b>.btn btn-outline-primary</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-outline-secondary">Secondary</button></td>
+                    <td>Class: <b>.btn btn-outline-secondary</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-outline-success">Success</button></td>
+                    <td>Class: <b>.btn btn-outline-success</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-outline-info">Info</button></td>
+                    <td>Class: <b>.btn btn-outline-info</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-outline-warning">Warning</button></td>
+                    <td>Class: <b>.btn btn-outline-warning</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-outline-danger">Danger</button></td>
+                    <td>Class: <b>.btn btn-outline-danger</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-outline-dark">Dark</button></td>
+                    <td>Class: <b>.btn btn-outline-dark</b></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-outline-light text-dark">Light</button></td>
+                    <td>Class: <b>.btn btn-outline-light</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div class="container my-5">
+        <h2>Button Sizes</h2>
+        <p>Use the <b>.btn-lg</b> class for large buttons or <b>.btn-sm</b> class for small buttons.</p>
+        <button type="button" class="btn btn-primary btn-lg">Large</button>
+        <button type="button" class="btn btn-primary btn-md">Default</button>
+        <button type="button" class="btn btn-primary btn-sm">Small</button>
+    </div>
+    <hr>
+    <div class="container my-5" >
+        <h2>Block Level Buttons</h2>
+        <p>To create a block level button that spans the entire width of the parent element, use the <b>.d-grid "helper"</b> class on the parent element.</p>
+        <div class="d-grid">
+            <button type="button" class="btn btn-danger btn-block">Full Length Button</button><br>
+            <button type="button" class="btn btn-warning btn-block">Full Length Button</button><br>
+            <button type="button" class="btn btn-success btn-block">Full Length Button</button>
+        </div>
+    </div> 
+    <hr>
+    <div class="container my-5">
+        <h2>Active/Disabled Buttons</h2>
+        <p>The class <b>.active</b> makes a button appear pressed, and the disabled attribute makes a button unclickable. Note that <a> elements do not support the disabled attribute and must therefore use the <b>.disabled</b> class to make it visually appear disabled.</p>
+        <button type="button" class="btn btn-warning disabled">Disable</button>
+        <button type="button" class="btn btn-warning active">Active</button>
+        <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+    </div>  
+    <hr>
+    <div class="container my-5">
+        <h2>Spinner Buttons</h2>
+        <p>You can also add "spinners" to a button, which you will learn more about in our <a href="https://www.w3schools.com/bootstrap5/bootstrap_spinners.php" target="_blank">BS5 Spinners Tutorial</a></p>
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+        </button>
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+            loading..
+        </button>
+        <button class="btn btn-primary disabled">
+            <span class="spinner-border spinner-border-sm"></span>
+            disable
+        </button>
+        <button class="btn btn-primary">
+            <span class="spinner-grow spinner-grow-sm"></span>
+            ..loading
+        </button>
+        <button class="btn btn-primary disabled">
+            <span class="spinner-grow spinner-grow-sm"></span>
+            ..disabled
+        </button>
+    </div>
+</body>
+</html>
